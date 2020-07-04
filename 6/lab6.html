@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная 6</title>
+    <link rel="stylesheet" type="text/css" href="lab6.css"/>
+</head>
+<body>
+    <div class="header">
+        <p class="text1">Цена вопроса не важна, когда средства индивидуальной защиты оказались бесполезны</p>
+        <p class="text2">На двадцатом съезде партии прозвучало поразительное заявление: современная методология разработки одухотворила всех причастных</p>
+    </div>
+    <div class="main">
+        <div class="block">
+            <img src="mind.jpg"  class="img">
+            <p class="text3">Что-то новенькое</p>         
+            <p class="text4">Повседневная практика показывает, что убеждённость некоторых оппонентов обеспечивает актуальность как самодостаточных, так и внешне зависимых концептуальных решений. Но высокое качество позиционных исследований не оставляет шанса для форм воздействия!</p>
+        </div>
+        <div class="block">
+            <img src="books.jpg"  class="img">
+            <p class="text3">Познавательно</p>            
+            <p class="text4">Как принято считать, тщательные исследования конкурентов неоднозначны и будут подвергнуты целой серии независимых исследований. Но тщательные исследования конкурентов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть подвергнуты целой серии независимых исследований.</p>
+        </div>
+        <div class="block">
+            <img src="epstein-didnt-kill-himself.jpg"  class="img">
+            <p class="text3">Гениально</p>
+            <p class="text4">А также интерактивные прототипы неоднозначны и будут превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Сложно сказать, почему ключевые особенности структуры проекта формируют глобальную экономическую сеть и при этом - указаны как претенденты на роль ключевых факторов.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="ramka"><p class="raamka">Начни свой путь</p></div>
+    </div>
+    
+    <script>
+        const URL = "https://jsonplaceholder.typicode.com/posts"
+    var xhr = new XMLHttpRequest()
+    xhr.open("POST", URL)
+	xhr.onload = () =>{console.log(xhr.response)}
+    var body = {title: 'foo', body: 'bar', userId: 1} 
+   xhr.open('POST',URL);
+   xhr.send(body);
+   xhr.onload=() =>alert(xhr.response);
+    </script>
+</body>
+</html>
