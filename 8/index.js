@@ -1,0 +1,1 @@
+var sqrt = require('./func').sqrt;
